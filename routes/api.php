@@ -20,5 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('v1/events', [\App\Http\Controllers\Api\EventsController::class, 'index']);
 Route::get('v1/events/{id}', [\App\Http\Controllers\Api\EventsController::class, 'show']);
+
 Auth::routes();
+
 Route::put('/eventupdate', [App\Http\Controllers\EditController::class, 'update'])->name('event.update');
