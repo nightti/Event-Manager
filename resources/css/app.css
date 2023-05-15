@@ -1,0 +1,24 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.table th {
+    background-color: #e9ecef;
+    border-bottom: 2px solid #dee2e6;
+}
+.table tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.hidden {
+    display: none;
+}
